@@ -1,4 +1,4 @@
-.product , .login , .wishlist , .cart , .logo{
+.product , .login , .wishlist , .shopping-cart , .logo{
     background-repeat: no-repeat;
     text-indent:101% ;
     overflow:hidden ;
@@ -19,8 +19,8 @@
 .wishlist{
     background-image: url(../image/header/heart.png);
 }
-.cart{
-    background-image: url(../image/header/cart.png);
+.shopping-cart{
+    background-image: url(../image/header/shopping-cart.png);
 }
 .nav_bar{
     h3{

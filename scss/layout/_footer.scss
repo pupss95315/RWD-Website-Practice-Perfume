@@ -1,0 +1,25 @@
+ .footer-bar{
+    background: #916000;
+    li a{
+        color :white ;
+    }
+}
+.copy-right{
+    h5{
+        color : white ;
+    }
+    img{
+        width:128px ;
+        height : 38px ;
+    }
+}
+.subscribe{
+    background-image: url(../image/footer/bottle.png);
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    .container {
+        padding-bottom: 112px;
+    }
+}

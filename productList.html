@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product list</title>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-between align-items-center py-2">
+            <a href="#" class="logo">logo</a>
+            <ul class = "nav_bar d-flex justify-content-evenly">
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "product mx-1" href="#">product</a>
+                    <h3>Product</h3>
+                </li>
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "login mx-1" href="#">login</a>
+                    <h3>log in</h3>
+                </li>
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "wishlist mx-1" href="#">wishlist</a>
+                    <h3>Wishlist</h3>
+                </li>
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "cart mx-1" href="#">cart</a>
+                    <h3>Cart(3)</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu mb-5">
+        <div class="container">
+            <ul class = "d-flex align-items-center">
+                <li>
+                    <a class = "py-3 pr-2" href="#">CHANEL</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Jo Malone</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Curology</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Dior</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Chloe</a>
+                </li>
+                <li>
+                    <a class = "py-3 pl-2" href="#">ZARA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container px-0">
+        <ul class = "d-flex flex-wrap">
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product1.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_2.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_3.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_4.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_5.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_6.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_7.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_8.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_9.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_10.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_11.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+            <li class = "col-3 mb-5">
+                <img src="image/productlist/product_12.png" alt="">
+                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h3 class = "mb-1">Jo Malone</h3>
+                <div class="d-flex flex-row mb-1"> 
+                    <p >NT$1,380</p>
+                </div>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
+                    <img src="image/productlist/like.png" alt="">
+                </button>
+                <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToCart">
+                    <img src="image/productlist/cart.png" alt="">
+                </button>
+            </li>
+        </ul>
+    </div>     
+</div>
+    <div class="subscribe">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12 col-sm-10 col-md-6 col-xl-4">
+                    <h2 class="mb-1 text-gray-dark">記得<br/>訂閱以獲取更多資訊！</h2>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg border border-primary" placeholder="Your email address">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar p-3">
+        <div class="container d-flex justify-content-between">
+            <div class="copy-right d-flex align-items-center">
+                <img class = "mr-2" src="image/footer/logo_white.png" alt="">
+                <h5>© 2020. All Rights Reserved.</h5>
+            </div>
+            <ul class = "d-flex justify-content-evenly align-items-center">
+                <li class = "mr-2">
+                    <a href="#">Product</a>
+                </li>
+                <li class = "mx-2">
+                    <a href="#">Blog</a>
+                </li>
+                <li class = "ml-2">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

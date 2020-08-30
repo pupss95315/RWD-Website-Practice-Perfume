@@ -1,0 +1,26 @@
+h2{
+    font-weight: 1000 ;
+}
+h3 , p{
+    font-size : 12px ;
+}
+.like{
+    background-image: url(../image/productlist/like.png);
+    background-repeat: no-repeat;
+    text-indent:101% ;
+    overflow:hidden ;
+    white-space:nowrap ;
+}
+.cart{
+    background-image: url(../image/productlist/cart.png);
+    background-repeat: no-repeat;
+    text-indent:101% ;
+    overflow:hidden ;
+    white-space:nowrap ;
+}
+.menu{
+    background: #916000;
+    li a{
+        color :white ;
+    }
+}

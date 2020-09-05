@@ -1,9 +1,8 @@
-.product , .login , .wishlist , .shopping-cart , .logo{
+.product , .login , .wishlist , .shopping-cart , .logo , .hamIcon{
     background-repeat: no-repeat;
     text-indent:101% ;
     overflow:hidden ;
     white-space:nowrap ;
-    width :20px ;
 }
 .logo{
     background-image: url(../image/header/logo.png);
@@ -12,19 +11,47 @@
 }
 .product{
     background-image: url(../image/header/product.png);
+    width : 20px ;
 }
 .login{
     background-image: url(../image/header/login.png);
+    width : 20px ;
 }
 .wishlist{
     background-image: url(../image/header/heart.png);
+    width : 20px ;
 }
 .shopping-cart{
     background-image: url(../image/header/shopping-cart.png);
+    width : 20px ;
+}
+
+.hamIcon{
+    background-image: url(../image/header/hamIcon.png);
+    width :34px ;
+    height : 30px ;
 }
 .nav_bar{
     h3{
         color : #8D8D8D ;
         font-size: 20px ;
     }
+}
+.toggle-list{
+    display :none ;
+    max-height: 0px;
+    @include pad(){
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        transition: all 0.8s;
+        overflow: hidden;
+        background: white;
+        flex-direction: column;
+    }
+}
+.header .active{
+    max-height: 200px;
+    z-index: 1;
 }

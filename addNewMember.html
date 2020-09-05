@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product list</title>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-between align-items-center py-2">
+            <a href="#" class="logo">logo</a>
+            <ul class = "nav_bar d-flex justify-content-evenly">
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "product mx-1" href="#">product</a>
+                    <h3>Product</h3>
+                </li>
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "login mx-1" href="#">login</a>
+                    <h3>log in</h3>
+                </li>
+                <li class = "d-flex align-items-center mx-2">
+                    <a class = "wishlist mx-1" href="#">wishlist</a>
+                    <h3>Wishlist</h3>
+                </li>
+                <li class = "d-flex align-items-center ml-2">
+                    <a class = "shopping-cart mx-1" href="#">cart</a>
+                    <h3>Cart(3)</h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="menu mb-5">
+        <div class="container">
+            <ul class = "d-flex align-items-center">
+                <li>
+                    <a class = "py-3 pr-2" href="#">CHANEL</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Jo Malone</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Curology</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Dior</a>
+                </li>
+                <li>
+                    <a class = "py-3 px-2" href="#">Chloe</a>
+                </li>
+                <li>
+                    <a class = "py-3 pl-2" href="#">ZARA</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container d-flex">
+
+        <!-------------- 會員中心 ---------------->
+
+        <div class="member-center col-2">
+            <h2 class = "mb-4">會員中心</h2>
+            <ul>
+                <li class = "mb-3">會員資料修改</li>
+                <li class = "mb-3">訂單查詢</li>
+                <li>退／換貨申請</li>
+            </ul>
+        </div>
+
+        <!-------------- 修改資料 ---------------->
+
+        <div class="member-info col-12 col-md-7">
+
+            <!-------------- 個人資料修改 ---------------->
+
+            <h5 class="border-bottom pb-2 font-weight-bold">個人資料修改</h5>
+            <form class="text-dark mb-12" action="">
+                <div class="form-group row">   
+                    <label for="account" class="col-3 pr-3 col-xl-2 col-form-label">會員帳號</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" readonly class="form-control-plaintext col-12 col-xl-8 text-dark" id="account" value="email@example.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="name" class="col-3 pr-3 col-xl-2 col-form-label">會員姓名</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8 " id="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="gender" class="col-3 pr-3 col-xl-2 col-form-label">會員性別</label>
+                    <div class="col-3 col-xl-2">
+                        <select class="form-control text-dark" id="gender">
+                            <option>女</option>
+                            <option>男</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="account" class="col-3 pr-3 col-xl-2 col-form-label">電子信箱</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8 text-dark" id="account" value="email@example.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="phone" class="col-3 pr-3 col-xl-2 col-form-label">手機號碼</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8" id="phone">
+                    </div>
+                </div>
+
+                 <!-------------- 聯絡地址 ---------------->
+
+                <div class="form-group row">
+                    <label for="address" class="col-3 pr-3 col-xl-2 col-form-label">聯絡地址</label>
+                    <div class="col-9 col-xl-10">
+                        <div class="row">
+                            <div class="col-8 col-xl-4 mb-4">
+                                <select class="form-control text-dark" id="address">
+                                    <option>台灣及離島</option>
+                                    <option>金門</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 mb-4 pr-2">
+                                <select class="form-control text-dark" id="address">
+                                    <option>高雄市</option>
+                                    <option>新北市</option>
+                                </select>
+                            </div>
+                            <div class="col-4 mb-4 pl-0 ">
+                                <select class="form-control text-dark" id="address">
+                                    <option>鹽埕區</option>
+                                    <option>永和區</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4 ">
+                                <input type="text" class="form-control col-12 col-xl-8 text-dark" id="address" placeholder="請輸入地址">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="custom-control form-control-lg custom-checkbox">  
+                                    <input type="checkbox" class="custom-control-input" id="latestNews">  
+                                    <label class="custom-control-label" for="latestNews">我願意收到最新優惠情報</label>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------- 配送地址 ---------------->
+
+                <div class="form-group row">
+                    <label for="sendAddress" class="col-3 pr-3 col-xl-2 col-form-label">配送地址</label>
+                    <div class="col-9 col-xl-10">
+                        <div class="row">
+                            <div class="col-8 col-xl-4 mb-4 ">
+                                <select class="form-control text-dark" id="sendAddress">
+                                    <option>台灣及離島</option>
+                                    <option>金門</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 mb-4">
+                                <select class="form-control text-dark" id="sendAddress">
+                                    <option>高雄市</option>
+                                    <option>新北市</option>
+                                </select>
+                            </div>
+                            <div class="col-4 mb-4 pl-0 ">
+                                <select class="form-control text-dark" id="sendAddress">
+                                    <option>鹽埕區</option>
+                                    <option>永和區</option>
+                                </select>
+                            </div>
+                            <div class="col-12 mb-4 ">
+                                <input type="text" class="form-control col-12 col-xl-8" id="sendAddress" placeholder="請輸入地址">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-4">
+                                <button type="submit" class="btn btn-primary-dark px-11">確定修改</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <!-------------- 修改密碼 ---------------->
+
+            <h5 class="border-bottom pb-2 font-weight-bold mb-3">修改密碼</h5>
+            <form action="addNewMember.html" class="text-dark">
+                <div class="form-group row">
+                    <label for="oldPassword" class="col-3 pr-3 col-xl-2  col-form-label">舊密碼</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8" id="oldPassword">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="newPassword" class="col-3 pr-3 col-xl-2  col-form-label">新密碼</label>
+                    <div class="col-9 col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8" id="newPassword">
+                    </div>
+                </div>
+                <div class="longgrid form-group row">
+                    <label for="confirmPassword" class="col-3 col-xl-2 col-form-label text-nowrap">確認新密碼</label>
+                    <div class="col-9  col-xl-10">
+                        <input type="text" class="form-control col-12 col-xl-8" id="confirmPassword">
+                    </div> 
+                </div>
+                <div class="form-group row">
+                    <div class="col-3 col-xl-2"></div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col mb-4">
+                                <button type="submit" class="btn btn-primary-dark px-11">變更密碼</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </form>
+        </div>
+        <!-------------- 會員編號 ---------------->
+        <div class = "mt-1 ml-3">
+            <div class="d-flex align-items-center mb-4">
+                <img class="mr-1" src="image/addNewMember/member.png">
+                <h5 class="text-dark">會員編號<span class="ml-1 text-dark font-weight-light">T00020080615</span></h5>
+            </div>
+            <ul>
+                <li class = "mb-3">
+                    <div class="row">
+                        <div class="col-3 col-md-5 col-xl-4 text-nowrap">
+                            <h3>購物車</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>56</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class = "mb-3">
+                    <div class="row">
+                        <div class="col-3 col-md-5 col-xl-4 text-nowrap">
+                            <h3>我的收藏</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>23</h3>
+                        </div>
+                    </div> 
+                </li>
+                <li class = "mb-3">
+                    <div class="row">
+                        <div class="col-3 col-md-5 col-xl-4 text-nowrap mb-4">
+                            <h3>已完成訂單</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>8</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class = "mb-3">
+                    <div class="row">
+                        <div class="col-3 col-md-5 col-xl-4 text-nowrap mb-4">
+                            <h3>會員紅利</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>2680</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class = "mb-3">
+                    <div class="row">
+                        <div class="col-3 col-md-5 col-xl-4 text-nowrap mb-4">
+                            <h3>專屬邀請碼</h3>
+                        </div>
+                        <div class="col-3">
+                            <h3>TK2075</h3>
+                        </div>
+                    </div>
+                    <small style="color:#A5A5A5;">新戶輸入邀請碼即可獲贈紅利點數1000點</small>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="subscribe">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-12 col-sm-10 col-md-6 col-xl-4">
+                    <h2 class="mb-1 text-gray-dark">記得<br/>訂閱以獲取更多資訊！</h2>
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg border border-primary" placeholder="Your email address">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar p-3">
+        <div class="container d-flex justify-content-between">
+            <div class="copy-right d-flex align-items-center">
+                <img class = "mr-2" src="image/footer/logo_white.png" alt="">
+                <h5>© 2020. All Rights Reserved.</h5>
+            </div>
+            <ul class = "d-flex justify-content-evenly align-items-center">
+                <li class = "mr-2">
+                    <a href="#">Product</a>
+                </li>
+                <li class = "mx-2">
+                    <a href="#">Blog</a>
+                </li>
+                <li class = "ml-2">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

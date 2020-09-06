@@ -1,10 +1,66 @@
-h5{
+.banner{
+    background-image: url("../image/index/banner.png");
+    height: 870px;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     @include pad(){
-        font-size :24px ;
-        line-height : 36px ;
+        height: 480px;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
     }
 }
-
+.arc-btn{
+    display: block;
+    border-radius: 50rem;
+    text-align: center;
+    transition: all .3s;
+}
+.index-banner-btn{
+    width: 70%;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    &:hover{
+        background-color: #fff;
+    }
+    @include pad(){
+        width: 100%;
+    }
+}
+.soldout{
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color:black ;
+        cursor: pointer;
+      }
+      
+      &:hover .overlay {
+        opacity: 0.3;
+      }
+    .soldOutText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
 h6{
     @include pad(){
         font-size :14px ;
@@ -12,5 +68,5 @@ h6{
     }
 }
 .bg-light{
-    background: #E0E0E0;
+    background:#E0E0E0 ;
 }

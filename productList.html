@@ -4,33 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product list</title>
-    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous">
+    </script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="header d-flex justify-content-between align-items-center py-2">
-            <a href="#" class="logo">logo</a>
+        <div class="header d-flex justify-content-between align-items-center py-2"id = "header">
+            <a href="index.html" class="logo">logo</a>
             <ul class = "nav_bar d-flex justify-content-evenly">
-                <li class = "d-flex align-items-center mx-2">
-                    <a class = "product mx-1" href="#">product</a>
+                <li class = "d-none d-md-flex align-items-center mx-1">
+                    <a class = "product mx-1" href="productList.html">product</a>
                     <h3>Product</h3>
                 </li>
-                <li class = "d-flex align-items-center mx-2">
-                    <a class = "login mx-1" href="#">login</a>
+                <li class = "d-none d-md-flex align-items-center mx-2">
+                    <a class = "login mx-1" href="login.html">login</a>
                     <h3>log in</h3>
                 </li>
-                <li class = "d-flex align-items-center mx-2">
+                <li class = "d-none d-md-flex align-items-center mx-2">
                     <a class = "wishlist mx-1" href="#">wishlist</a>
                     <h3>Wishlist</h3>
                 </li>
                 <li class = "d-flex align-items-center ml-2">
                     <a class = "shopping-cart mx-1" href="#">cart</a>
-                    <h3>Cart(3)</h3>
+                    <h3 class = "d-none d-md-block">Cart(3)</h3>
+                </li>
+                <li class = "d-flex d-md-none align-items-center ml-2">
+                    <nav class="navbar pr-0">
+                        <button class="btn border-0 shadow-none pr-0" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="image/header/hamIcon.png" alt="icon">
+                        </button>
+                    </nav>
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="container-fluid px-0 navbar-collapse collapse" id="navbarToggler">
+        <ul class="navbar-nav">
+            <li class="nav-item bg-secondary text-center border-bottom border-white">
+                <a class="nav-link text-white py-3" href="productList.html">Product</a>
+            </li>
+            <li class="nav-item bg-secondary text-center border-bottom border-white">
+                <a class="nav-link text-white py-3" href="#">Wishlist</a>
+            </li>
+            <li class="nav-item bg-secondary text-center border-bottom border-white">
+                <a class="nav-link text-white py-3" href="#">Blog</a>
+            </li>
+            <li class="nav-item bg-secondary text-center border-bottom border-white">
+                <a class="nav-link text-white py-3" href="#">Contact</a>
+            </li>
+            <li class="nav-item bg-secondary text-center">
+                <a class="nav-link text-white py-3" href="login.html">Log in</a>
+            </li>
+        </ul>
     </div>
     <div class="menu mb-5 d-none d-md-block">
         <div class="container">
@@ -60,7 +97,7 @@
         <ul class = "d-flex flex-wrap">
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product1.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -75,7 +112,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_2.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -90,7 +127,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_3.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -104,7 +141,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_4.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -118,7 +155,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_5.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -133,7 +170,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_6.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -148,7 +185,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_7.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -162,7 +199,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_8.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -176,11 +213,10 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_9.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
-                    <p >NT$1,380</p>
-                    <p class="ml-2 text-dark"><del>NT$1,580</del></p>
+                    <p>NT$1,380<del class = "text-dark">NT$1,580</del></p>
                 </div>
                 <button type="button" class="btn p-0" data-toggle="modal" data-target="#addToWishlist">
                     <img src="image/productlist/like.png" alt="">
@@ -191,7 +227,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_10.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -206,7 +242,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_11.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -220,7 +256,7 @@
             </li>
             <li class = "col-6 col-md-3 mb-5">
                 <img src="image/productlist/product_12.png" alt="">
-                <h2 class = "mb-2">Poppy & Barley</h2>
+                <h2 class = "mb-2 font-weight-bold">Poppy & Barley</h2>
                 <h3 class = "mb-1">Jo Malone</h3>
                 <div class="d-flex flex-row mb-1"> 
                     <p >NT$1,380</p>
@@ -258,11 +294,11 @@
     </div>
     <div class="footer-bar p-3">
         <div class="container d-flex justify-content-between">
-            <div class="copy-right d-flex align-items-center">
+            <div class="copy-right d-flex align-items-center justify-content-between col-12 col-md-7">
                 <img class = "mr-2" src="image/footer/logo_white.png" alt="">
-                <h5>© 2020. All Rights Reserved.</h5>
+                <h6 class = "text-white">© 2020. All Rights Reserved.</h6>
             </div>
-            <ul class = "d-flex justify-content-evenly align-items-center">
+            <ul class = "d-none d-md-flex justify-content-evenly align-items-center">
                 <li class = "mr-2">
                     <a href="#">Product</a>
                 </li>

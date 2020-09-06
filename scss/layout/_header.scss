@@ -37,21 +37,3 @@
         font-size: 20px ;
     }
 }
-.toggle-list{
-    display :none ;
-    max-height: 0px;
-    @include pad(){
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 100%;
-        transition: all 0.8s;
-        overflow: hidden;
-        background: white;
-        flex-direction: column;
-    }
-}
-.header .active{
-    max-height: 200px;
-    z-index: 1;
-}
